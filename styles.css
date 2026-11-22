@@ -1,0 +1,412 @@
+
+/* =================================
+   CONFIGURACIÓN GENERAL
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f3f5;
+    color: #263442;
+    line-height: 1.6;
+}
+
+/* =================================
+   IDENTIDAD UNIVERSITARIA
+================================= */
+
+header {
+    background-color: #ffffff;
+}
+
+.identidad-universitaria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 22px 20px;
+    border-bottom: 1px solid #e4e8ec;
+}
+
+.identidad-universitaria img {
+    display: block;
+    width: 100%;
+    max-width: 430px;
+    height: auto;
+}
+
+/* =================================
+   CABECERA DEL PROYECTO
+================================= */
+
+.cabecera-proyecto {
+    background: linear-gradient(135deg, #10283f, #294d68);
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.subtitulo-institucional {
+    color: #d5b66a;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.cabecera-proyecto h1 {
+    font-size: 62px;
+    letter-spacing: 8px;
+    margin: 12px 0 4px;
+}
+
+.cabecera-proyecto p {
+    color: #d5e2ec;
+    font-size: 19px;
+}
+
+/* =================================
+   BARRA DE NAVEGACIÓN
+================================= */
+
+nav {
+    background-color: #0b1d2d;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding: 17px 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #d5b66a;
+}
+
+/* =================================
+   CONTENIDO PRINCIPAL
+================================= */
+
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 35px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* =================================
+   PORTADA
+================================= */
+
+.portada {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+    background: linear-gradient(120deg, #e1eaf0, #ffffff);
+    border-left: 6px solid #b49a5a;
+}
+
+.etiqueta {
+    color: #a18a4e;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.portada-texto h2 {
+    color: #183b56;
+    font-size: 34px;
+    margin: 15px 0;
+}
+
+.portada-texto p {
+    color: #526170;
+}
+
+.portada-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portada-imagen img {
+    width: 100%;
+    max-width: 450px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 22px;
+    background-color: #183b56;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #b49a5a;
+}
+
+/* =================================
+   CUATRO TARJETAS
+================================= */
+
+.secciones {
+    background: transparent;
+    box-shadow: none;
+    padding: 20px 0;
+}
+
+.secciones > h2 {
+    color: #183b56;
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.introduccion-secciones {
+    text-align: center;
+    color: #526170;
+    margin-bottom: 30px;
+}
+
+.contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.tarjeta {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.10);
+}
+
+.icono {
+    font-size: 32px;
+}
+
+.tarjeta h3 {
+    color: #183b56;
+    margin: 12px 0;
+}
+
+.tarjeta p {
+    color: #526170;
+    margin-bottom: 18px;
+}
+
+.tarjeta a {
+    color: #947b3e;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.tarjeta a:hover {
+    color: #183b56;
+}
+
+/* =================================
+   PROPÓSITO DEL PROYECTO
+================================= */
+
+.proposito {
+    text-align: center;
+    padding: 45px 35px;
+    border-top: 4px solid #b49a5a;
+}
+
+.proposito h2 {
+    color: #183b56;
+    font-size: 27px;
+    margin: 12px 0;
+}
+
+.proposito p {
+    max-width: 750px;
+    margin: 0 auto;
+    color: #526170;
+}
+
+/* =================================
+   PIE DE PÁGINA
+================================= */
+
+footer {
+    background-color: #0b1d2d;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.footer-titulo {
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.footer-secundario {
+    color: #aebdca;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+/* =================================
+   ADAPTACIÓN PARA CELULARES
+================================= */
+
+@media (max-width: 700px) {
+
+    .identidad-universitaria {
+        padding: 18px 20px;
+    }
+
+    .identidad-universitaria img {
+        max-width: 330px;
+    }
+
+    .cabecera-proyecto {
+        padding: 42px 15px;
+    }
+
+    .cabecera-proyecto h1 {
+        font-size: 40px;
+        letter-spacing: 5px;
+    }
+
+    .cabecera-proyecto p {
+        font-size: 16px;
+    }
+
+    .subtitulo-institucional {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    nav {
+        gap: 18px;
+        padding: 15px 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    main {
+        margin: 25px auto;
+        padding: 0 15px;
+    }
+
+    section {
+        padding: 25px 20px;
+    }
+
+    .portada {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+
+    .portada-texto h2 {
+        font-size: 27px;
+    }
+
+    .portada-imagen img {
+        height: 220px;
+    }
+
+    .contenedor-tarjetas {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .tarjeta {
+        padding: 25px;
+    }
+
+    .secciones > h2 {
+        font-size: 23px;
+    }
+
+    .proposito h2 {
+        font-size: 23px;
+    }
+}
+
+/* =================================
+   CRÉDITOS INSTITUCIONALES
+================================= */
+
+.creditos {
+    text-align: center;
+    border-top: 4px solid #b49a5a;
+}
+
+.creditos h2 {
+    color: #183b56;
+    font-size: 27px;
+    margin: 12px 0 20px;
+}
+
+.creditos p {
+    color: #526170;
+    margin: 6px 0;
+}
+
+.creditos h3 {
+    color: #183b56;
+    margin-bottom: 8px;
+}
+
+.datos-autor {
+    margin-top: 30px;
+}
+
+.agradecimiento {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #e1e6ea;
+}
+
+@media (max-width: 700px) {
+    .creditos h2 {
+        font-size: 23px;
+    }
+}
